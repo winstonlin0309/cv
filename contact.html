@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:winstonlin0309@gmail.com">winstonlin0309@gmail.com</a></p>
+    <p>Phone # : <a href="tel:6266771703">(123)-456-789</a></p>
+    <hr>
+    <form action="mailto:winstonlin0309@gmail.com" method="post" enctype="text/plain">
+        <label>Your Name</label>
+        <input type="text" name="yourName">
+        <br>
+        <label>Your Email</label>
+        <input type="email" name="yourEmail" id=""><br>
+        <label>Your Message</label><br>
+        <textarea name="yourMessage" cols="30" rows="10"></textarea><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
+
+
+<!--
+    Summary:
+
+    action ——> 点submit后会执行什么
+    method=“post”   ->  会把我们输入的资料发到相对应的action里
+    enctype = encode type   -> 意思和charset =“UTF-8” 差不多， 是为了能够在展示文字的时候不出现乱码
+
+
+
+    Arttribute:
+    name    ->  加了这个name是为了如果我们post到email上的话， 他前后会有一个 yourName= winston
+                                                                     yourEmail= asdf@gmail.com 
+                                                                     yourMessage=   gg
+                如果不加name artribute的话， 就只会是   winston
+                                                    asdf@gmail.com
+                                                    gg
+-->
